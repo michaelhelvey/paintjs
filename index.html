@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint</title>
+  </head>
+  <body>
+      <header>
+          <div class="inner-header">
+            <div class="logo-container">
+                <span class="logo-letter">B</span>
+                <span class="logo-word">basic</span>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Why</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="right-menu">
+                <button class="theme-selector">
+                    <img src="/theme.svg" />
+                </button>
+                <a class="download-button">Download Now</a>
+            </div>
+        </header>
+        <main>
+            <h1>Paint</h1>
+            <div class="draw-container">
+                <div class="colors-container">
+                    <button class="colors-button black"></button>
+                    <button class="colors-button red"></button>
+                    <button class="colors-button green"></button>
+                    <button class="colors-button blue"></button>
+                    <button class="colors-button yellow"></button>
+                    <button class="colors-button pink"></button>
+                    <button class="colors-button cyan"></button>
+                    <button class="colors-button orange"></button>
+                    <button class="colors-button purple"></button>
+                    <button class="colors-button maroon"></button>
+                </div>
+                <div class="draw-container-vert">
+                    <div class="draw-menu">
+                        <label class="stroke-width">
+                            Stroke Width: <span id="stroke-width-number">5</span>
+                            <input type="range" min="1" max="10"></input>
+                        </label>
+                        <button class="menu-action-button" id="undo-button">
+                            Undo
+                        </button>
+                        <button class="menu-action-button" id="redo-button">
+                            Redo
+                        </button>
+                        <button class="menu-action-button" id="clear-button">
+                            Clear Canvas
+                        </button>
+                        <button class="menu-action-button" id="download-button">
+                            Download PNG
+                        </button>
+                    </div>
+                    <canvas id="canvas" height="600" width="1000"></canvas>
+                </div>
+            </div>
+          </div>
+      </main>
+    <script type="module" src="/paint.js"></script>
+  </body>
+</html>

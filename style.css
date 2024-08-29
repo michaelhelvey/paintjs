@@ -1,0 +1,207 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+    --page-width: 1200px;
+    --black: #000;
+    --white: #fff;
+    --dark-gray: #a9a9a9;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px #efefef solid;
+}
+
+.inner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--page-width);
+    padding: 1rem 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.nav-links ul li a:hover {
+    color: var(--dark-gray);
+}
+
+.logo-container {
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.logo-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 100%;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.logo-word {
+    text-transform: uppercase;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button.theme-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px #efefef solid;
+    outline: none;
+    border-radius: 2px;
+    padding: 0.5rem;
+}
+
+button.theme-selector img {
+    height: 1rem;
+    width: 1rem;
+}
+
+a.download-button {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.draw-container {
+    display: flex;
+    border: 1px #efefef solid;
+    padding: 1rem;
+}
+
+.colors-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.colors-container .colors-button {
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+}
+
+.colors-container .colors-button.selected {
+    border: 3px solid black;
+}
+
+.colors-container .colors-button.black {
+    background-color: black;
+}
+
+.colors-container .colors-button.red {
+    background-color: red;
+}
+
+.colors-container .colors-button.green {
+    background-color: green;
+}
+
+.colors-container .colors-button.blue {
+    background-color: blue;
+}
+
+.colors-container .colors-button.yellow {
+    background-color: yellow;
+}
+
+.colors-container .colors-button.pink {
+    background-color: pink;
+}
+
+.colors-container .colors-button.pink {
+    background-color: pink;
+}
+
+.colors-container .colors-button.cyan {
+    background-color: cyan;
+}
+
+.colors-container .colors-button.orange {
+    background-color: orange;
+}
+
+.colors-container .colors-button.purple {
+    background-color: purple;
+}
+
+.colors-container .colors-button.maroon {
+    background-color: maroon;
+}
+
+.draw-container-vert {
+    display: flex;
+    flex-direction: column;
+}
+
+.draw-menu {
+    padding: 0.4rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stroke-width {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.stroke-width input {
+    padding: 1rem;
+    width: 10rem;
+    margin-left: 1rem;
+}
+
+canvas {
+    border: 1px #efefef solid;
+    width: 100%;
+    height: 100%;
+}
